@@ -1,0 +1,39 @@
+Key Features of the Tabulation System
+✅ User Roles & Authentication
+
+Admin (Manages events, judges, and scoring)
+Judges (Submit scores)
+Contestants (View results if allowed)
+Spectators (Public results if applicable)
+✅ Event Management
+
+Add/Edit/Delete events
+Manage categories (e.g., Talent, Q&A, Costume)
+Set criteria and scoring weights
+✅ Judge Panel & Scoring System
+
+Judges log in and see contestants per category
+Score input with real-time validation
+Automatic computation of weighted scores
+✅ Live Leaderboard & Results
+
+Real-time ranking updates
+Filter by category, event, or overall performance
+Option to hide/show results
+✅ Database Structure (MySQL)
+
+events_tbl (Event details)
+judges_tbl (Judge accounts)
+contestants_tbl (Participants info)
+criteria_tbl (Scoring rules)
+scores_tbl (Judges' scores per contestant)
+✅ Reports & Print Features
+
+Export results as PDF
+Generate score breakdowns per contestant
+✅ Technology Stack Suggestion
+
+Frontend: HTML, CSS (Bootstrap), JavaScript (AJAX, jQuery, or Vue.js)
+Backend: PHP (MySQLi or PDO)
+Database: MySQL
+Real-time Updates: WebSockets or AJAX Polling
