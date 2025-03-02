@@ -12,9 +12,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit(); 
     }
 
-    $category = trim($_POST['category']);
-    $criteria = trim($_POST['criteria']);
-    $percentage = filter_var(trim($_POST['percentage']), FILTER_VALIDATE_FLOAT);
+    $category = isset($_POST['category']) ? trim($_POST['category']) : null;
+    $criteria = isset($_POST['criteria']) ? trim($_POST['criteria']) : null;
+    $percentage = isset($_POST['percentage']) ? filter_var(trim($_POST['percentage']), FILTER_VALIDATE_FLOAT) : false;
+
 
     if (empty($category) || empty($criteria) || $percentage === false) {
         $_SESSION['error'] = "All fields are required and percentage must be a valid number!";
@@ -35,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $result = $evaluationModel->addEvaluationCriteria($category, $criteria, $percentage);
 
     if ($result === true) {
-        $_SESSION['success'] = "Success!";
+        $_SESSION['success'] = "Successfully Added $category - $criteria - $percentage%";
     } else {
         $_SESSION['error'] = "Err: " . htmlspecialchars($result, ENT_QUOTES, 'UTF-8');
     }

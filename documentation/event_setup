@@ -1,0 +1,56 @@
+    Login Portal
+
+    • Login as Admin / Judge
+    • Redirect to each account dashboard
+
+    - If judge status is Inactive. don't allow to login.
+    
+    
+    Criteria Manager
+
+    • Add new evaluation criteria.
+    • Prevent duplicate category and criteria combinations.
+    • Delete Existing Evaluation Criteria.
+
+    - When eye button is clicked. the modal will appear then it will display the percentage based
+      on the category and criteria.
+    - Below the table there is (Overall Percentage) of all category and criteria.
+    - When calculator button is clicked. the modal will appear then you can use the calculator.
+
+
+    Judges
+
+    • Add new judge fullname, username, password, status (Active, Inactive)
+    • Set status Active/Inactive judge account
+    • Delete Judge Account
+
+    Participants
+
+    • Add new participant fullname, status (Active, Inactive)
+    • Delete participant
+
+    - If parcipant status is Inactive. Remove from judge scoring table
+
+    Event Settings
+
+    • Add new event name, event logo, event banner
+    • Set status Active/Inactive Event 
+    • Delete Event
+
+    - If event status is Inactive. Dont allow to display in judge panel.
+
+
+    Leaderboard
+
+    - Total the participant criteria scores based on the judge
+
+    Overall Ranking
+
+    - The highest score will be the 1st in the ranking
+
+
+    Officials
+
+    - Create official fullname and position
+    - limit adding to prevent multiple display in overall ranking 
+

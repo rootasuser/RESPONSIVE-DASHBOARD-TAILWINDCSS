@@ -39,7 +39,7 @@ unset($_SESSION['message'], $_SESSION['message_type']);
   <?php endif; ?>
 
   <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-    <h2 class="text-2xl font-semibold mb-6 text-center">Login</h2>
+    <h2 class="text-2xl font-semibold mb-6 text-center">Login Portal</h2>
     
     <form action="Controllers/userController.php" method="POST"> 
       <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">

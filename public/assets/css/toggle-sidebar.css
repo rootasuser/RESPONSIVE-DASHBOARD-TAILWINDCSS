@@ -1,0 +1,7 @@
+.sidebar {
+    transition: margin-left 0.5s;
+}
+
+.sidebar.toggled {
+    margin-left: -2px; 
+}
